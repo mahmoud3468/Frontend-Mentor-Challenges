@@ -1,0 +1,112 @@
+@media (max-width: 48em) {
+  html {
+    font-size: 60%;
+  }
+
+  .main-nav {
+    position: relative;
+    padding: 0 2.4rem;
+  }
+  .nav-links {
+    position: absolute;
+    top: 14rem;
+    left: 50%;
+    width: 87%;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 6.4rem 0;
+    transform: translate(-50%, -10%);
+    display: none;
+  }
+  .nav-links::before {
+    content: "";
+    position: absolute;
+    top: -2.7rem;
+    right: 0;
+    border: 1.4rem solid white;
+    border-left: 1.4rem solid transparent;
+    border-top: 1.4rem solid transparent;
+  }
+  .nav-item {
+    color: hsl(213, 9%, 39%);
+  }
+  .nav-item.btn {
+    background-color: hsl(51, 100%, 49%);
+  }
+  .burger-menu {
+    display: block;
+  }
+
+  .header {
+    min-height: 60vh;
+    background-image: url(../images/mobile/image-header.jpg);
+    text-align: center;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about div {
+    text-align: center;
+  }
+  .about div:nth-child(1),
+  .about div:nth-child(4) {
+    align-items: center;
+    padding: 6.4rem 3.2rem;
+  }
+  .about div:nth-child(4) {
+    grid-row: 3;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+  .services .graphic-design {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+  }
+  .services .photography {
+    background-image: url(../images/mobile/image-photography.jpg);
+  }
+  .services-info {
+    max-width: 100%;
+  }
+
+  .primary-heading {
+    font-size: 4.4rem;
+    letter-spacing: 4px;
+    padding-top: 6.4rem;
+    margin-bottom: 3.2rem;
+  }
+  .secondary-heading {
+    max-width: 100%;
+  }
+
+  .testimonials {
+    text-align: center;
+  }
+  .testimonials .tertiary-heading {
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+  }
+  .testimonials-grid {
+    gap: 4.8rem;
+  }
+  .testimonial {
+    padding: 0 2.4rem;
+    gap: 2.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    height: 65vh;
+  }
+}
+
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 4.2 / 48 / 64 / 80 / 96 / 128 / 140
+*/

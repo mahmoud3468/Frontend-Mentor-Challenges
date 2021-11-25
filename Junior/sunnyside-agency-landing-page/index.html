@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+
+<body>
+  <nav class="main-nav">
+    <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+    <ul class="nav-links">
+      <li><a class="nav-item" href="#">About</a></li>
+      <li><a class="nav-item" href="#">Services</a></li>
+      <li><a class="nav-item" href="#">Projects</a></li>
+      <li><a class="nav-item btn" href="#">Contact</a></li>
+    </ul>
+    <div class="burger-menu">
+      <img src="images/icon-hamburger.svg" alt="">
+    </div>
+  </nav>
+
+  <header class="header">
+    <h1 class="primary-heading">We are creatives</h1>
+    <img class="arrow-header" src="images/icon-arrow-down.svg" alt="arrow down icon">
+  </header>
+
+  <section class="about">
+    <div>
+      <h2 class="secondary-heading">Transform your brand</h2>
+      <p class="about-info">We are a full-service creative agency specializing in
+        helping brands grow fast. Engage your clients through compelling visuals
+        that do most of the marketing for you.</p>
+      <a class="learn-more" href="#">Learn More</a>
+    </div>
+    <div>
+      <img src="images/desktop/image-transform.jpg" alt="lol">
+    </div>
+    <div>
+      <img src="images/desktop/image-stand-out.jpg" alt="lol 2">
+    </div>
+    <div>
+      <h2 class="secondary-heading">Stand out to the right audience</h2>
+      <p class="about-info">audience Using a collaborative formula of designers, researchers,
+        photographers, videographers, and copywriters, we’ll build and extend your
+        brand in digital places.</p>
+      <a class="learn-more two" href="#">Learn More</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="graphic-design">
+      <h3 class="tertiary-heading">Graphic design</h3>
+      <p class="services-info">Great design makes you
+        memorable. We deliver artwork that underscores your brand message and
+        captures potential clients’ attention.</p>
+    </div>
+    <div class="photography">
+      <h3 class="tertiary-heading">Photography</h3>
+      <p class="services-info">Increase your credibility
+        by getting the most stunning, high-quality photos that improve your business
+        image.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3 class="tertiary-heading">Client testimonials</h3>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <img class="testimonial-img" src="images/image-emily.jpg" alt="">
+        <p class="testimonial-content">
+          We put our trust in Sunnyside and they delivered,
+          making sure our needs were met and deadlines were always hit.
+        </p>
+        <div class="testimonial-info">
+          <h4>Emily R.</h4>
+          <span>marketing director</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-img" src="images/image-thomas.jpg" alt="">
+        <p class="testimonial-content">
+          Sunnyside’s enthusiasm coupled with their keen interest
+          in our brand’s success made it a satisfying and enjoyable experience.
+        </p>
+        <div class="testimonial-info">
+          <h4>Thomas S.</h4>
+          <span>Cheif Operating officer</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img class="testimonial-img" src="images/image-jennie.jpg" alt="">
+        <p class="testimonial-content">
+          Incredible end result! Our sales increased over
+          400% when we worked with Sunnyside. Highly recommended!
+        </p>
+        <div class="testimonial-info">
+          <h4>Jennie F.</h4>
+          <span>Business Owner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer-logo">sunnyside</h2>
+
+    <ul class="footer-nav">
+      <li><a class="nav-item" href="#">About</a></li>
+      <li><a class="nav-item" href="#">Services</a></li>
+      <li><a class="nav-item" href="#">Projects</a></li>
+    </ul>
+
+    <ul class="social-links">
+      <li><img src="images/icon-facebook.svg" alt="facebook icon"></li>
+      <li><img src="images/icon-instagram.svg" alt="instagram icon"></li>
+      <li><img src="images/icon-twitter.svg" alt="twitter icon"></li>
+      <li><img src="images/icon-pinterest.svg" alt="pinterest icon"></li>
+    </ul>
+  </footer>
+
+  <script>
+    const burgerBtn = document.querySelector(".burger-menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    burgerBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active-nav");
+    });
+  </script>
+</body>
+
+</html>
