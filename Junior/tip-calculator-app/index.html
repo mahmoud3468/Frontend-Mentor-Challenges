@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <section class="splitter-wrapper">
+    <img src="images/logo.svg" class="logo" alt="splitter logo">
+    </h1>
+
+    <div class="splitter">
+      <div class="splitter-inputs">
+        <div class="bill">
+          <h2 class="secondary-heading">Bill</h2>
+          <small class="bill-err err"></small>
+          <div class="form-group">
+            <i class="fa fa-usd input-icon"></i>
+            <input id="bill-input" type="number" placeholder="0" />
+          </div>
+        </div>
+
+        <div class="tip">
+          <h2 class="secondary-heading">Select Tip %</h2>
+          <small class="tip-err err"></small>
+          <div class="tip-grid">
+            <span class="tip-amount" value="0.05">5%</span>
+            <span class="tip-amount" value="0.10">10%</span>
+            <span class="tip-amount" value="0.15">15%</span>
+            <span class="tip-amount" value="0.25">25%</span>
+            <span class="tip-amount" value="0.50">50%</span>
+            <input id="tip-input" type="number" class="tip-amount custom" placeholder="custom" />
+          </div>
+        </div>
+
+        <div class="people">
+          <h2 class="secondary-heading">Number of people</h2>
+          <small class="people-err err"></small>
+          <div class="form-group">
+            <i class="fa fa-user input-icon"></i>
+            <input id="person-input" type="number" placeholder="0" />
+          </div>
+        </div>
+      </div>
+
+      <div class="splitter-outputs">
+        <div>
+          <h4 class="output-heading">
+            <span>Tip Amount</span> <br />
+            / person
+          </h4>
+          <h2 class="output person-tip">$0.00</h2>
+        </div>
+        <div>
+          <h4 class="output-heading">
+            <span>Total</span> <br />
+            / person
+          </h4>
+          <h2 class="output person-bill">$0.00</h2>
+        </div>
+
+        <button type="submit" class="reset-btn">reset</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
