@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Custom Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1 class="primary-heading">TODO</h1>
+        <img
+          src="images/icon-sun.svg"
+          class="icon sun-icon"
+          alt="light mode button"
+        />
+      </header>
+
+      <section class="add-todo">
+        <i class="far fa-circle icon empty-icon"></i>
+        <form>
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Create a new todo..."
+            autocomplete="false"
+            value=""
+            autofocus
+            required
+          />
+          <button type="submit" class="mobile-submit">
+            <i class="fas fa-plus-circle icon plus-icon"></i>
+          </button>
+        </form>
+      </section>
+
+      <ul class="todo-list">
+        <!-- <li class="todo-item completed" data-id="546542">
+        <i class="icon fas fa-check check-icon"></i>
+        <p class="todo-content">Complete online javascript course</p>
+        <i class="fas fa-trash-alt icon trash-icon"></i>
+      </li>
+
+      <li class="todo-item" data-id="5461542">
+        <i class="icon far fa-circle empty-icon"></i>
+        <p class="todo-content">Complete Todo App</p>
+        <i class="fas fa-trash-alt icon trash-icon"></i>
+      </li>
+
+      <li class="todo-item" data-id="5461542">
+        <i class="icon far fa-circle empty-icon"></i>
+        <p class="todo-content">Rebuild the hole app</p>
+        <i class="fas fa-trash-alt icon trash-icon"></i>
+      </li>
+
+      <li class="todo-item" data-id="5461542">
+        <i class="icon far fa-circle empty-icon"></i>
+        <p class="todo-content">Think twice code once</p>
+        <i class="fas fa-trash-alt icon trash-icon"></i>
+      </li> -->
+      </ul>
+
+      <section class="todo-control">
+        <p class="items-left">items left</p>
+
+        <ul class="items-filter">
+          <li class="all">all</li>
+          <li class="active">active</li>
+          <li class="completed">completed</li>
+        </ul>
+
+        <p class="clear-completed-btn">Clear Completed</p>
+      </section>
+
+      <div class="hint">
+        Challenge solved by
+        <a href="https://mahmoud-elsayed.netlify.app/" target="_blank">
+          Mahmoud Elsayed
+        </a>
+      </div>
+      <!-- <div class="hint">Drag and drop to reorder list</div> -->
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+
+  <body>
+    <nav class="main-nav">
+      <div class="nav-icons">
+        <i class="fas fa-bars toggle-nav" name="burger"></i>
+        <i class="fas fa-times toggle-nav" name="close"></i>
+      </div>
+
+      <div class="logo">sneakers</div>
+
+      <ul class="nav-links">
+        <li><a href="#" class="nav-item">Collections</a></li>
+        <li><a href="#" class="nav-item">Men</a></li>
+        <li><a href="#" class="nav-item">Women</a></li>
+        <li><a href="#" class="nav-item">About</a></li>
+        <li><a href="#" class="nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-extra">
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-items-number">0</span>
+        </div>
+        <div class="cart-items hidden">
+          <h3>Cart</h3>
+          <div class="line"></div>
+
+          <div class="cart-item">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt="cart icon"
+              class="item-img"
+            />
+            <div class="item-info">
+              <h4 class="item-name">Fall Limited Edition Sneakers</h4>
+              <p class="item-price">$125.00 x 3 $375.00</p>
+            </div>
+            <img
+              src="images/icon-delete.svg"
+              alt="trash icon"
+              class="trash-icon"
+            />
+          </div>
+          <div class="cart-item">
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt="cart icon"
+              class="item-img"
+            />
+            <div class="item-info">
+              <h4 class="item-name">Converence shoes</h4>
+              <p class="item-price">$110.00 x 2 $220.00</p>
+            </div>
+            <img
+              src="images/icon-delete.svg"
+              alt="trash icon"
+              class="trash-icon"
+            />
+          </div>
+          <!-- <p class="empty-cart">Your cart is empty.</p> -->
+
+          <button class="btn checkout-btn">Checkout</button>
+        </div>
+
+        <img
+          src="images/image-avatar.png"
+          alt="avatar picture"
+          class="avatar"
+        />
+      </div>
+    </nav>
+
+    <section class="product-section">
+      <div class="product-image">
+        <div class="main-image">
+          <img src="images/image-product-1.jpg" alt="product image" />
+        </div>
+        <div class="thumbnails-images">
+          <img
+            class="selected"
+            src="images/image-product-1.jpg"
+            alt="product thumbnial"
+          />
+          <img src="images/image-product-2.jpg" alt="product thumbnial" />
+          <img src="images/image-product-3.jpg" alt="product thumbnial" />
+          <img src="images/image-product-4.jpg" alt="product thumbnial" />
+        </div>
+      </div>
+
+      <div class="product-slider hidden-slider">
+        <div class="product-image">
+          <div class="main-image">
+            <i class="fas fa-times close-slider"></i>
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+            <img
+              src="images/image-product-1.jpg"
+              class="slider-main-img"
+              alt="product image"
+            />
+          </div>
+          <div class="thumbnails-images slider-thumbnails">
+            <img src="images/image-product-1.jpg" alt="product thumbnial" />
+            <img src="images/image-product-2.jpg" alt="product thumbnial" />
+            <img src="images/image-product-3.jpg" alt="product thumbnial" />
+            <img src="images/image-product-4.jpg" alt="product thumbnial" />
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h5 class="tertairy-heading">Sneaker Company</h5>
+        <h2 class="product-name">Fall Limited Edition Sneakers</h2>
+
+        <p class="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="product-price">
+          <div>
+            <span class="price">$125.00</span>
+            <small class="discount">$250.00</small>
+          </div>
+          <span class="discount-percent">50%</span>
+        </div>
+
+        <form class="add-to-cart">
+          <div>
+            <i class="fas fa-minus minus-icon"></i>
+            <input type="number" min="1" max="10" step="1" value="1" />
+            <i class="fas fa-plus plus-icon"></i>
+          </div>
+          <button class="btn add-to-cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            Add to cart
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- 
+  $125.00
+  50%
+  
+  Add to cart -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

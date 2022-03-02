@@ -1,0 +1,128 @@
+@media (max-width: 48em) {
+  * {
+    font-size: 1.6rem;
+  }
+  html {
+    font-size: 60%;
+  }
+
+  /* Navbar Start */
+  .main-nav {
+    padding: 0 2.2rem;
+    gap: 1.4rem;
+  }
+  .main-nav::after {
+    display: none;
+  }
+  .burger-menu,
+  .close-menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 12;
+    transform: translateY(3px);
+  }
+  .logo {
+    flex: 1;
+    margin-right: 3.8rem;
+  }
+  .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 9.6rem 2.2rem;
+    background: #ffffff;
+    align-items: flex-start;
+    z-index: 10;
+    gap: 4.4rem;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 20%);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s ease-in;
+  }
+  .nav-open .nav-links {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .nav-icons {
+    display: flex;
+    transform: translateY(2px);
+  }
+  .fas[name="close"] {
+    display: none;
+  }
+  .nav-open .fas[name="burger"] {
+    display: none;
+  }
+  .nav-open .fas[name="close"] {
+    display: block;
+  }
+  .nav-item {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  .nav-item::after {
+    display: none;
+  }
+  .nav-extra {
+    gap: 2.2rem;
+  }
+  .avatar {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+  .cart-items {
+    top: auto;
+    right: 50%;
+    min-width: 32rem;
+    transform: translate(50%, 65%);
+  }
+
+  .product-section {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+    margin: 0 0 4.4rem 0;
+  }
+  .product-image {
+    grid-template-rows: 350px;
+  }
+  .main-image img {
+    border-radius: 0;
+  }
+  .thumbnails-images {
+    display: none;
+  }
+  .product-info {
+    padding: 0px 1.4rem;
+  }
+  .tertairy-heading {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .product-name {
+    font-size: 3.2rem;
+    margin-bottom: 1.8rem;
+  }
+  .product-description {
+    line-height: 1.7;
+    font-size: 1.4rem;
+  }
+  .add-to-cart {
+    flex-direction: column;
+    gap: 3.8rem;
+    padding: 0;
+  }
+  .add-to-cart div {
+    gap: 0rem;
+    width: 100%;
+    padding: 0 3.2rem;
+    justify-content: space-between;
+  }
+  .add-to-cart-btn {
+    width: 100%;
+  }
+}

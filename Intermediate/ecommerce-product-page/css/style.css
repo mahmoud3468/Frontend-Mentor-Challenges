@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: hsl(26, 100%, 55%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+}
+
+/* Navbar Start */
+.main-nav {
+  height: 6rem;
+  padding: 0 9.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main-nav::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #d2d5dbc4;
+}
+.logo {
+  margin-right: 4.8rem;
+  font-weight: 800;
+  font-size: 3.2rem;
+  letter-spacing: -1px;
+  flex: none;
+}
+.nav-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  flex: 1;
+}
+.nav-icons {
+  height: 100%;
+  display: none;
+  align-items: center;
+  transform: translateY(4px);
+  z-index: 11;
+}
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  transition: 0.25s;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background-color: var(--primary-color);
+  border-radius: 2.2rem;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  color: #000;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.nav-extra {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+}
+.cart-items {
+  position: absolute;
+  right: 6.8rem;
+  top: 8.1rem;
+  background-color: #fff;
+  box-shadow: 1px 4px 20px 1px rgb(0 0 0 / 20%);
+  border-radius: 0.6rem;
+  min-width: 35rem;
+  min-height: 20rem;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.cart-items.hidden {
+  display: none;
+}
+.empty-cart {
+  text-align: center;
+  padding-top: 3.2rem;
+  font-weight: 600;
+}
+.cart-items-number {
+  position: absolute;
+  top: -0.6rem;
+  right: -0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 2.2rem;
+  height: 1.4rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.cart-items h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0;
+}
+.line {
+  height: 1px;
+  background-color: #d2d5dbc4;
+}
+.cart-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.item-img {
+  height: 6.2rem;
+  width: 6.2rem;
+  border-radius: 0.4rem;
+}
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1;
+}
+.item-name {
+  font-size: 1.6rem;
+  color: #8e8e8e;
+}
+.item-price {
+  font-size: 1.4rem;
+}
+.trash-icon {
+  height: 2.2rem;
+  cursor: pointer;
+}
+.checkout-btn {
+  padding: 1.4rem 0;
+}
+.avatar {
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.avatar:hover {
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+/* Product Section start */
+.product-section {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 8rem;
+  margin: 6.8rem auto;
+}
+.product-image {
+  display: grid;
+  grid-template-rows: 420px 1fr;
+  gap: 4.4rem;
+}
+.main-image {
+  height: 100%;
+  width: 100%;
+}
+.main-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.2rem;
+  object-fit: fill;
+}
+.thumbnails-images {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2.2rem;
+}
+.thumbnails-images img {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 1.2rem;
+}
+.thumbnails-images img.selected {
+  box-shadow: 0 0 0 3px var(--primary-color);
+}
+.product-info {
+  padding: 4.4rem;
+}
+.tertairy-heading {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 2.2rem;
+}
+.product-name {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+}
+.product-description {
+  color: hsl(219, 9%, 45%);
+  line-height: 1.5;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+}
+.product-price {
+  display: flex;
+  gap: 2.8rem;
+  margin-bottom: 3.8rem;
+}
+.product-price div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.price {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #000000cc;
+}
+.discount {
+  text-decoration: line-through;
+  color: #ababab;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.discount-percent {
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 2;
+}
+.add-to-cart {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  padding: 0 1.2rem;
+}
+.add-to-cart div {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.add-to-cart input {
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.8rem;
+  outline: none;
+}
+.minus-icon,
+.plus-icon {
+  font-size: 1.6rem !important;
+  color: var(--primary-color);
+}
+.add-to-cart-btn {
+  padding: 1.4rem 4.4rem;
+}
+.add-to-cart-btn i {
+  font-size: 1.6rem;
+  margin-right: 1.8rem;
+}
+
+.thumbnails-images img:hover,
+.add-to-cart-btn:hover,
+.minus-icon:hover,
+.plus-icon:hover {
+  transition: 0.3s;
+  opacity: 0.75;
+}
+
+.product-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-slider.hidden-slider {
+  display: none;
+}
+.product-slider .product-image {
+  grid-template-rows: 500px 1fr;
+  justify-items: center;
+  gap: 3.2rem;
+  width: 35%;
+  transition: 0.3s;
+  animation: goRight 0.4s forwards;
+}
+@keyframes goRight {
+  0% {
+    transform: translateX(-2.2rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+.product-slider .main-image {
+  position: relative;
+}
+.product-slider .fa-times {
+  position: absolute;
+  top: -5rem;
+  right: 0.6rem;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.product-slider .fa-chevron-left,
+.product-slider .fa-chevron-right {
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.product-slider .fa-chevron-left {
+  transform: translate(-50%);
+  content: "\f053";
+  left: 0;
+}
+.product-slider .fa-chevron-right {
+  transform: translate(50%);
+  content: "\f054";
+  right: 0;
+}
+.product-slider .fa-chevron-left:hover,
+.product-slider .fa-chevron-right:hover,
+.product-slider .fa-times:hover {
+  color: var(--primary-color);
+}
+.product-slider .thumbnails-images {
+  gap: 3rem;
+  padding: 0 3.6rem;
+}
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/************************/
+/**** General Rules ****/
+/************************/
+.primary-heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  letter-spacing: 1.2rem;
+  color: #fff;
+}
+.btn {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+.icon {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+.mb-2 {
+  margin-bottom: 2.4rem;
+}
+.text-center {
+  text-align: center;
+}
+.fas {
+  font-size: 2.6rem;
+  cursor: pointer;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/************************/
+/**** PROJECT COLORS ****/
+/************************/
+/* 
+hsl(26, 100%, 55%)
+hsl(25, 100%, 94%)
+hsl(220, 13%, 13%)
+hsl(219, 9%, 45%)
+hsl(220, 14%, 75%)
+hsl(223, 64%, 98%)
+hsl(0, 0%, 100%)
+hsl(0, 0%, 75%)
+*/

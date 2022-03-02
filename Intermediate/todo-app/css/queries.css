@@ -1,0 +1,66 @@
+@media (max-width: 48em) {
+  * {
+    font-size: 1.6rem;
+  }
+  html {
+    font-size: 60%;
+  }
+  body {
+    background-image: url(../images/bg-mobile-dark.jpg);
+  }
+  .container {
+    width: 90%;
+  }
+  .primary-heading {
+    font-size: 3rem;
+  }
+  .add-todo,
+  .todo-item,
+  .todo-control {
+    gap: 1.4rem;
+    padding: 0 1.2rem;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .mobile-submit {
+    border: none;
+    outline: none;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+  }
+  .mobile-submit i {
+    padding: 1rem;
+    color: hsl(235, 19%, 35%);
+    font-size: 2rem;
+  }
+  .trash-icon {
+    visibility: visible;
+  }
+  .items-filter {
+    position: absolute;
+    bottom: -8.4rem;
+    left: 0;
+    background: #25273c;
+    height: 6.3rem;
+    padding: 0 1.4rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+  }
+  .items-filter li:hover,
+  .clear-completed-btn:hover {
+    color: hsl(220, 98%, 61%);
+  }
+  .hint {
+    margin-top: 12.8rem;
+  }
+}
